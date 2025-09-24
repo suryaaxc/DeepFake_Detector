@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepfake Detection Platform</title>
+  
+  <link id="theme-stylesheet" rel="stylesheet" href="{% static 'predictor/light.css' %}" />
+
   <link rel="stylesheet" href="{% static 'predictor/style.css' %}" />
 </head>
 <body>
@@ -13,6 +16,9 @@
       <header>
         <h1>🎯 Deepfake Detection Platform</h1>
         <p>Secure, AI-powered analysis for audio, image, and video files</p>
+        
+        <!-- Dark/Light Toggle Button -->
+        <button id="theme-toggle" class="btn">🌙 / ☀️</button>
       </header>
 
       <section class="intro">
@@ -40,6 +46,10 @@
     </div>
   </div>
 
+  <!-- Existing JS -->
   <script src="{% static 'predictor/script.js' %}"></script>
+
+  <!-- Theme Toggle JS -->
+  <script src="{% static 'predictor/theme-toggle.js' %}"></script>
 </body>
 </html>
